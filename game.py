@@ -1,5 +1,7 @@
 from gameparts import Board
 
+from inspect import getsource
+
 
 def main():
     # Создать игровое поле - объект класса Board.
@@ -12,6 +14,8 @@ def main():
     game.make_move(0, 1, 'O')
     # Перерисовать поле с учётом сделанного хода.
     game.display()
+    print(game)
+    print(getsource(Board))
 
 
 if __name__ == '__main__':
