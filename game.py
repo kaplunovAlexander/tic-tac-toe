@@ -1,3 +1,6 @@
+from parts import Board
+
+
 # Создать игровое поле - объект класса Board.
 game = Board()
 # Отрисовать поле в терминале.
