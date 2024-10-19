@@ -1,10 +1,12 @@
 # Объявить класс.
 class Board:
-    field_size = 3
+    """ Класс, который описывает игровое поле."""
+
+    f_size = 3
 
     def __init__(self):
         self.board = [
-            [' ' for _ in range(self.field_size)] for _ in range(self.field_size)
+            [' ' for _ in range(self.f_size)] for _ in range(self.f_size)
         ]
 
     # Метод, который обрабатывает ходы игроков.
@@ -20,5 +22,5 @@ class Board:
     def __str__(self):
         return (
             'Объект игрового поля размером '
-            f'{self.field_size}x{self.field_size}'
+            f'{self.f_size}x{self.f_size}'
         )
